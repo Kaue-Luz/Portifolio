@@ -33,11 +33,13 @@ body {
   */
 
   background: var(--bg_url) no-repeat top center/ cover;
+  transition: 1.5s;
 }
 
 body * {
   font-family: "Inter", sans-serif;
   color: var(--text_color);
+
 }
 
 #container {
@@ -83,11 +85,13 @@ body * {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
+
+  transition: 0.5s;
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  left: calc(100% - 32px);
+  
 }
 
 #switch span {
