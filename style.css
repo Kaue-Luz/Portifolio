@@ -33,7 +33,8 @@ body {
   */
 
   background: var(--bg_url) no-repeat top center/ cover;
-  transition: 1.5s;
+  height: 100vh;
+  transition: 1s;
 }
 
 body * {
@@ -167,4 +168,15 @@ footer {
   padding: 24px 0px;
   text-align: center;
   font-size: 14px;
+}
+
+/*media queries*/
+@media (min-width: 700px) {
+  :root {
+    --bg_url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg_url: url(./assets/bg-desktop-light.jpg);
+  }
 }
